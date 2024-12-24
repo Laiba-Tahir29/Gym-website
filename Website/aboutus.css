@@ -1,0 +1,67 @@
+/* General Reset */
+body, h1, h2, p, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #500082; /* Purple */
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Container Styling */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark Gray Background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Highlight Text */
+.highlight {
+    color: #ff8c00; /* Bright Orange */
+    font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4B0082; /* Purple */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Links Styling */
+a {
+    color: #ff8c00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

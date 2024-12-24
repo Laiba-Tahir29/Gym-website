@@ -1,0 +1,193 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* General Styles for the Pricing Section */
+.section__container {
+    padding: 50px 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Pricing Section Header */
+.section__header {
+    font-size: 36px;
+    text-align: center;
+    color: #500082;
+    margin-bottom: 10px;
+}
+
+/* Pricing Section Subheader */
+.section__subheader {
+    font-size: 18px;
+    text-align: center;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+/* Grid for Price Cards */
+.price__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Price Card Styling */
+.price__card {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.price__card:hover {
+    transform: translateY(-10px);
+}
+
+/* Price Card Content */
+.price__card__content h4 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.price__card__content h3 {
+    font-size: 28px;
+    color: #500082;
+    margin-bottom: 20px;
+}
+
+.price__card__content p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+
+.price__card__content i {
+    color: #500082;
+    margin-right: 10px;
+}
+
+/* Button Style */
+.price__btn {
+    background-color: #500082;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.price__btn:hover {
+    background-color: #400066;
+}
+
+@media only screen and (max-width: 768px) {
+    .price__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Services Section */
+.services-section {
+    background-color: #1c1c1c;
+    padding: 40px 0;
+}
+
+/* Services Title */
+.services-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #500082;
+}
+
+/* Services Description */
+.services-description {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Container for Services */
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Service Card */
+.service-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: 48%; /* 2 columns layout for services */
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Service Title */
+.service-title {
+    font-size: 1.25rem;
+    color: #500082;
+    margin-bottom: 15px;
+}
+
+/* Service Description */
+.service-description {
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Special Styling for Sports-Specific Plans */
+.sports-list {
+    margin-top: 15px;
+}
+
+.sports-list ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.sports-list li {
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Stacking the services on smaller screens */
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        flex-basis: 100%; /* Service cards will be stacked vertically */
+    }
+}

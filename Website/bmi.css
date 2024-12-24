@@ -1,0 +1,84 @@
+/* General Styles for the Page */
+body {
+    background: linear-gradient(135deg, #121212, #2c2c2c);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 50px 0;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #500082; /* Purple color */
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Styling */
+form {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #500082;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+/* Button Style */
+button {
+    background-color: #500082;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #400066;
+}
+
+/* Result Styling */
+#result {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #ddd;
+}

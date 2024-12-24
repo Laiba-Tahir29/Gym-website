@@ -1,0 +1,206 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --main-bg-color: #000; /* Black */
+    --accent-color: #500082; /* Purple */
+    --button-bg: #500082; /* Purple */
+    --button-hover-bg: #500082; /* Darker purple */
+    --text-color: #fff; /* White for text */
+    --input-bg: #333; /* Dark gray for inputs */
+    --input-border-color: #555; /* Lighter border for inputs */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--accent-color);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Checkout Page Styles */
+  .checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .checkout-container {
+    background-color: var(--main-bg-color);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  h2 {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem; /* Smaller font size */
+  }
+  
+  .checkout form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .checkout form h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem; /* Smaller font size */
+  }
+  
+  .checkout form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--text-color);
+    font-size: 1rem; /* Smaller font size */
+  }
+  
+  .checkout form input {
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid var(--input-border-color);
+    background-color: var(--input-bg);
+    width: 100%;
+    max-width: 400px;
+    color: var(--text-color);
+    font-size: 1rem; /* Smaller font size */
+  }
+  
+  .checkout form input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    margin-top: 15px;
+    background-color: #333;
+    padding: 12px;
+    border-radius: 5px;
+    color: var(--text-color);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .order-summary p {
+    margin: 4px 0;
+    font-size: 1rem; /* Smaller font size */
+  }
+  
+  .checkout-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--button-bg);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    width: 48%;
+  }
+  
+  .button:hover {
+    transform: scale(1.05); /* Zooms button on hover */
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    padding: 2rem 0;
+    width: 100%;
+    position: relative;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    width: 30%;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+  }
+  
+  .social-icons a img {
+    width: 30px;
+    height: 30px;
+  }
+  

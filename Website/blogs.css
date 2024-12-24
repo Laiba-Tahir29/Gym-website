@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #121212, #2c2c2c);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 50px 0;
+    background-color: #333;
+    text-align: center;
+    border-bottom: 2px solid #500082;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #500082; /* Purple color */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Blog Container */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 40px 20px;
+}
+
+/* Blog Card */
+.blog-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-title {
+    font-size: 1.5rem;
+    color: #500082;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    background-color: #500082;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #400066;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: 1fr; /* Stack the cards on smaller screens */
+    }
+}
