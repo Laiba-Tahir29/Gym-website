@@ -29,6 +29,7 @@ Java
 Practiced creating a multi-page website  
 Learned how to style layouts with CSS    
 Completed my first professional ICT project
+learned a bit about git and github
 Also learned some soft skills while workig with group members .
 
 
